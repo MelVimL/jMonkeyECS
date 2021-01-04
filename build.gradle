@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation "org.jmonkeyengine:jme3-core:3.3.2-stable"
+    implementation "org.jmonkeyengine:jme3-desktop:3.3.2-stable"
+    implementation "org.jmonkeyengine:jme3-lwjgl:3.3.2-stable"
+}
