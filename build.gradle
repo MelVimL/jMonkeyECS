@@ -1,5 +1,6 @@
 plugins {
-    id 'java'
+    id "com.jfrog.bintray" version "1.7"
+    id "java"
 }
 
 group 'org.example'
@@ -12,7 +13,24 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    implementation "org.jmonkeyengine:jme3-core:3.3.2-stable"
-    implementation "org.jmonkeyengine:jme3-desktop:3.3.2-stable"
-    implementation "org.jmonkeyengine:jme3-lwjgl:3.3.2-stable"
+}
+
+bintray {
+    user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
+    key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+    publications = ['jMonkeyECS']
+    pkg {
+        repo = 'generic'
+        name = 'jMonkeyEcs'
+        userOrg = user
+        licenses = ['GNU General Public License v3.0']
+        vcsUrl = 'https://github.com/MelVimL/jMonkeyECS.git'
+        labels = [""]
+        publicDownloadNumbers = true
+        version {
+            name = '0.1.0-Beta'
+            desc = 'jMonkeyECS 0.1.0'
+            vcsTag = '0.1.0'
+        }
+    }
 }
