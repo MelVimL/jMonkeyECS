@@ -1,4 +1,4 @@
-package com.github.melviml.ecs;
+package com.github.melviml.jme.ecs;
 
 
 import java.util.*;

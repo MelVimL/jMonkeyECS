@@ -1,4 +1,4 @@
-package com.github.melviml.ecs.examples;
+package com.github.melviml.jme.ecs.examples;
 
 import com.jme3.app.SimpleApplication;
 import com.jme3.material.Material;
@@ -6,8 +6,8 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.shape.Box;
 import com.jme3.system.AppSettings;
-import com.github.melviml.ecs.World;
-import com.github.melviml.ecs.WorldImpl;
+import com.github.melviml.jme.ecs.World;
+import com.github.melviml.jme.ecs.WorldImpl;
 
 
 public class Main extends SimpleApplication {

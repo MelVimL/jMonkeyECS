@@ -1,4 +1,4 @@
-package com.github.melviml.ecs.examples.processors;
+package com.github.melviml.jme.ecs.examples.processors;
 
 import com.jme3.input.InputManager;
 import com.jme3.input.KeyInput;
@@ -6,11 +6,11 @@ import com.jme3.input.controls.ActionListener;
 import com.jme3.input.controls.AnalogListener;
 import com.jme3.input.controls.KeyTrigger;
 import com.jme3.math.Vector3f;
-import com.github.melviml.ecs.Processor;
-import com.github.melviml.ecs.examples.components.Jumpable;
-import com.github.melviml.ecs.examples.components.Velocity;
-import com.github.melviml.ecs.utils.ComponentResult;
-import com.github.melviml.ecs.utils.Pair;
+import com.github.melviml.jme.ecs.Processor;
+import com.github.melviml.jme.ecs.examples.components.Jumpable;
+import com.github.melviml.jme.ecs.examples.components.Velocity;
+import com.github.melviml.jme.ecs.utils.ComponentResult;
+import com.github.melviml.jme.ecs.utils.Pair;
 
 import java.util.HashMap;
 import java.util.LinkedList;
