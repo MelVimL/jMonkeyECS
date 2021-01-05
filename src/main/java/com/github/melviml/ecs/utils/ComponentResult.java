@@ -1,6 +1,6 @@
-package ecs.utils;
+package com.github.melviml.ecs.utils;
 
-import ecs.Component;
+import com.github.melviml.ecs.Component;
 import java.util.Map;
 
 

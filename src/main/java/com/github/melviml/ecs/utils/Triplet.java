@@ -1,4 +1,4 @@
-package ecs.utils;
+package com.github.melviml.ecs.utils;
 
 public class Triplet<A,B,C> {
     public final A a;

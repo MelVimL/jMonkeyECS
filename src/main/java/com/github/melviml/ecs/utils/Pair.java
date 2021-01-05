@@ -1,4 +1,4 @@
-package ecs.utils;
+package com.github.melviml.ecs.utils;
 
 public class Pair<A,B> {
     public final A a;

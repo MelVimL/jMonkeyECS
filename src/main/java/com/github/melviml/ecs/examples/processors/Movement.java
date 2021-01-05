@@ -1,9 +1,9 @@
-package ecs.examples.processors;
+package com.github.melviml.ecs.examples.processors;
 
-import ecs.Processor;
-import ecs.examples.components.Position;
-import ecs.examples.components.Visible;
-import ecs.utils.ComponentResult;
+import com.github.melviml.ecs.Processor;
+import com.github.melviml.ecs.examples.components.Position;
+import com.github.melviml.ecs.examples.components.Visible;
+import com.github.melviml.ecs.utils.ComponentResult;
 
 public class Movement extends Processor {
     @Override

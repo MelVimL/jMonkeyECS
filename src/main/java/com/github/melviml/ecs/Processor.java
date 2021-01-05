@@ -1,4 +1,4 @@
-package ecs;
+package com.github.melviml.ecs;
 
 public abstract class Processor {
     protected World world;

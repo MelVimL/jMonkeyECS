@@ -1,5 +1,10 @@
-package ecs.examples;
+package com.github.melviml.ecs.examples;
 
+import com.github.melVim.ecs.examples.components.*;
+import com.github.melviml.ecs.examples.processors.Input;
+import com.github.melviml.ecs.examples.processors.MovementParallel;
+import com.github.melviml.ecs.examples.processors.PhysicsParallel;
+import com.github.melviml.ecs.examples.components.*;
 import com.jme3.app.Application;
 import com.jme3.app.SimpleApplication;
 import com.jme3.app.state.AbstractAppState;
@@ -9,12 +14,9 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Geometry;
 import com.jme3.scene.shape.Box;
-import ecs.Entity;
-import ecs.World;
+import com.github.melviml.ecs.Entity;
+import com.github.melviml.ecs.World;
 import ecs.examples.components.*;
-import ecs.examples.processors.Input;
-import ecs.examples.processors.MovementParallel;
-import ecs.examples.processors.PhysicsParallel;
 
 import java.util.Random;
 

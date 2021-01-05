@@ -1,6 +1,6 @@
-package ecs.examples.components;
+package com.github.melviml.ecs.examples.components;
 
-import ecs.Component;
+import com.github.melviml.ecs.Component;
 
 public class Mass implements Component {
     public float weight;

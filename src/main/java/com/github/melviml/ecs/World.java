@@ -1,6 +1,7 @@
-package ecs;
+package com.github.melviml.ecs;
 
-import ecs.utils.ComponentResult;
+import com.github.melviml.ecs.utils.ComponentResult;
+
 import java.util.Set;
 
 public interface World {

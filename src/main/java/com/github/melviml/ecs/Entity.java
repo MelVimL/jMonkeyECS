@@ -1,6 +1,4 @@
-package ecs;
-
-import ecs.utils.Pair;
+package com.github.melviml.ecs;
 
 import java.util.List;
 import java.util.Set;

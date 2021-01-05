@@ -1,5 +1,6 @@
-package ecs;
+package com.github.melviml.ecs;
 
+import com.github.melviml.ecs.utils.ComponentResult;
 import ecs.utils.*;
 
 import java.util.*;
