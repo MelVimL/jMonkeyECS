@@ -1,6 +1,6 @@
 plugins {
     id "com.jfrog.bintray" version "1.7.3"
-    id "java"
+    id "java-library"
 }
 
 group 'com.github.melviml'
@@ -9,6 +9,9 @@ version '0.0.1-Beta'
 repositories {
     mavenCentral()
     jcenter()
+    maven {
+        url  "https://dl.bintray.com/melvim/jMonkeyECS"
+    }
     apply plugin: 'maven'
     apply plugin: 'maven-publish'
     apply plugin: 'java-library'
