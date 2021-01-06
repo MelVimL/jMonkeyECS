@@ -1,5 +1,5 @@
 plugins {
-    id "com.jfrog.bintray" version "1.7"
+    id "com.jfrog.bintray" version "1.7.3"
     id "java"
 }
 
@@ -9,10 +9,26 @@ version '0.0.1-Beta'
 repositories {
     mavenCentral()
     jcenter()
+    apply plugin: 'maven'
+    apply plugin: 'maven-publish'
+    apply plugin: 'java-library'
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+
+publishing {
+    publications {
+        MyPublication(MavenPublication) {
+            from components.java
+            groupId 'com.github.melviml'
+            artifactId 'jMonkeyECS'
+            version '0.1.0'
+        }
+    }
 }
 
 bintray {
@@ -21,7 +37,7 @@ bintray {
     publications = ['jMonkeyECS']
     pkg {
         repo = 'generic'
-        name = 'jMonkeyEcs'
+        name = 'MyPublication'
         userOrg = user
         licenses = ['GNU General Public License v3.0']
         vcsUrl = 'https://github.com/MelVimL/jMonkeyECS.git'
