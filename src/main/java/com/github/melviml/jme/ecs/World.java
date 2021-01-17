@@ -13,14 +13,20 @@ public interface World {
 
     //Processor
     void add(Processor processor);
+    int processors();
 
 
     //Entities
     void add(Entity entity);
     void remove(Long id);
+
+    int entities();
+
     //components
     void addComponent(Long id, Component c);
     Set<ComponentResult> getComponents(Class<? extends Component> ... components);
+
+    int components();
 
 
 

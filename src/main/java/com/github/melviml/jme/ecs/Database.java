@@ -11,10 +11,10 @@ public interface Database {
     void addEntity(Entity entity);
     void remove(Long id);
     Entity getEntity(Long id);
-
+    int numberOfEntities();
 
     Set<ComponentResult> getComponents(Class<? extends Component> ... components);
-
+    int numberOfComponents();
 
     void addComponent(Long id, Component c);
 }

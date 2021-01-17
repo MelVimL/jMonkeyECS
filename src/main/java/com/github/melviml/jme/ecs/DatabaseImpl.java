@@ -85,6 +85,11 @@ public class DatabaseImpl implements Database {
         return idEntityMap.get(id);
     }
 
+    @Override
+    public int numberOfEntities() {
+        return entities.size();
+    }
+
     private Set<ComponentResult> getResultSet(Set<Class<? extends Component>> components){
 
         updateCache(components);
@@ -96,6 +101,11 @@ public class DatabaseImpl implements Database {
         Set<Class<? extends Component>> search = new LinkedHashSet(Arrays.asList(components));
 
         return getResultSet(search);
+    }
+
+    @Override
+    public int numberOfComponents() {
+        return components.size();
     }
 
     @Override

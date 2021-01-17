@@ -30,6 +30,11 @@ public class WorldImpl implements World {
     }
 
     @Override
+    public int processors() {
+        return processors.size();
+    }
+
+    @Override
     public void add(Entity entity) {
         database.addEntity(entity);
     }
@@ -37,6 +42,11 @@ public class WorldImpl implements World {
     @Override
     public void remove(Long id) {
         database.remove(id);
+    }
+
+    @Override
+    public int entities() {
+        return database.numberOfEntities();
     }
 
 
@@ -48,6 +58,11 @@ public class WorldImpl implements World {
     @Override
     public Set<ComponentResult> getComponents(Class<? extends Component> ... components) {
         return database.getComponents(components);
+    }
+
+    @Override
+    public int components() {
+        return database.numberOfEntities();
     }
 
 
